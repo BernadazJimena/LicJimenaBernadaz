@@ -2,6 +2,8 @@ const menuToggle = document.querySelector('.menu-toggle');
 const mainMenu = document.querySelector('#main-menu');
 const menuLinks = document.querySelectorAll('#main-menu a');
 const whatsappLink = document.querySelector('.whatsapp-link');
+const floatingWhatsapp = document.querySelector('.floating-whatsapp');
+const contactSection = document.querySelector('#contacto');
 
 // Replace this number with the WhatsApp number, including country code.
 const whatsappNumber = '5491127663667';
@@ -26,6 +28,18 @@ if (menuToggle && mainMenu) {
 
 if (whatsappLink) {
     whatsappLink.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+}
+
+if (floatingWhatsapp) {
+    floatingWhatsapp.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+}
+
+if (floatingWhatsapp && contactSection && 'IntersectionObserver' in window) {
+    const contactObserver = new IntersectionObserver(([entry]) => {
+        floatingWhatsapp.classList.toggle('is-hidden', entry.isIntersecting);
+    }, { threshold: 0.15 });
+
+    contactObserver.observe(contactSection);
 }
 
 const currentYear = document.querySelector('#current-year');

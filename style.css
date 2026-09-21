@@ -525,6 +525,10 @@ h2 em {
     background: var(--white);
 }
 
+.floating-whatsapp {
+    display: none;
+}
+
 .site-footer {
     padding: 40px 0 25px;
     color: #d2c2df;
@@ -702,5 +706,33 @@ h2 em {
     .footer-bottom {
         flex-direction: column;
         gap: 7px;
+    }
+
+    .floating-whatsapp {
+        position: fixed;
+        z-index: 9;
+        right: 16px;
+        bottom: 16px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 15px;
+        color: var(--white);
+        background: #168c4a;
+        border-radius: 999px;
+        box-shadow: 0 8px 24px rgba(22, 86, 49, .28);
+        font-size: 12px;
+        font-weight: 700;
+        transition: opacity .2s ease, transform .2s ease;
+    }
+
+    .floating-whatsapp-label {
+        font-size: 13px;
+    }
+
+    .floating-whatsapp.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(12px);
     }
 }
