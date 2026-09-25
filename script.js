@@ -5,8 +5,7 @@ const whatsappLink = document.querySelector('.whatsapp-link');
 const floatingWhatsapp = document.querySelector('.floating-whatsapp');
 const contactSection = document.querySelector('#contacto');
 
-// Replace this number with the WhatsApp number, including country code.
-const whatsappNumber = '5491127663667';
+const whatsappNumber = '5491132283816';
 const whatsappMessage = 'Hola Jimena, quisiera consultar por un procedimiento';
 
 if (menuToggle && mainMenu) {
