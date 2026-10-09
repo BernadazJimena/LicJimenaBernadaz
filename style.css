@@ -760,3 +760,28 @@ h2 em {
         transform: translateY(12px);
     }
 }
+
+/* Sitio de muestra: aclaración que aparece al tocar el botón de WhatsApp */
+.demo-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.demo-contact .button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.demo-note {
+    margin: 0;
+    max-width: 320px;
+    font-size: .9rem;
+    line-height: 1.5;
+    opacity: .9;
+}
+
+.demo-note[hidden] {
+    display: none;
+}

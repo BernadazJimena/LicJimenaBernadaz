@@ -5,9 +5,6 @@ const whatsappLink = document.querySelector('.whatsapp-link');
 const floatingWhatsapp = document.querySelector('.floating-whatsapp');
 const contactSection = document.querySelector('#contacto');
 
-const whatsappNumber = '0000000000';
-const whatsappMessage = 'Hola Laura, quisiera consultar por un procedimiento';
-
 if (menuToggle && mainMenu) {
     menuToggle.addEventListener('click', () => {
         const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
@@ -25,12 +22,14 @@ if (menuToggle && mainMenu) {
     });
 }
 
-if (whatsappLink) {
-    whatsappLink.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-}
+// Sitio de muestra: el botón de WhatsApp no abre ningún chat, solo muestra una aclaración.
+// (El botón flotante lleva a la sección de contacto.)
+const demoNote = document.querySelector('.demo-note');
 
-if (floatingWhatsapp) {
-    floatingWhatsapp.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+if (whatsappLink && demoNote) {
+    whatsappLink.addEventListener('click', () => {
+        demoNote.hidden = false;
+    });
 }
 
 if (floatingWhatsapp && contactSection && 'IntersectionObserver' in window) {
