@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title description">
-  <title id="title">Ilustración genérica de una profesional de enfermería</title>
-  <desc id="description">Retrato ilustrado con fondo lila, una figura con ambo y estetoscopio.</desc>
+  <title id="title">Ilustración de una enfermera</title>
+  <desc id="description">Retrato ilustrado de una mujer de cabello largo con ambo y estetoscopio, sobre un fondo lila.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#f2eafa"/>
@@ -17,9 +17,12 @@
   <path d="M87 900c18-194 119-308 273-308s255 114 273 308z" fill="#73509a" opacity=".18"/>
   <path d="M147 900c20-166 91-261 213-261s193 95 213 261z" fill="url(#coat)"/>
   <path d="m286 640 74 93 74-93-36-48h-76z" fill="#d7c5e8"/>
+  <path d="M283 422c-21-112-9-224 75-244 93-22 145 61 125 216l-2 157c-1 42-20 71-54 89l-20-99c34-41 49-126 32-206-21-16-37-45-46-79-26 45-65 73-112 91l8 190c1 45-19 82-56 103l15-184z" fill="#49384f"/>
   <path d="M283 411c0-117 36-181 77-181 53 0 95 55 95 172v49c0 101-43 158-98 158s-92-65-92-159z" fill="#c98269"/>
   <path d="M265 388c-7-109 29-196 113-196 71 0 113 50 111 158-21-5-47-23-62-53-31 43-87 73-162 91z" fill="#49384f"/>
   <path d="M258 380c14-6 29-4 41 7v58c-9 20-25 28-41 21-15-8-19-58 0-86zm210 0c-14-6-29-4-41 7v58c9 20 25 28 41 21 15-8 19-58 0-86z" fill="#c98269"/>
+  <circle cx="271" cy="453" r="5" fill="#e9c27d"/>
+  <circle cx="454" cy="453" r="5" fill="#e9c27d"/>
   <path d="M325 408h13m58 0h13" stroke="#49384f" stroke-linecap="round" stroke-width="7"/>
   <path d="M361 431c-5 18-10 30-17 38 9 7 19 7 29 0" fill="none" stroke="#a65f55" stroke-linecap="round" stroke-width="5"/>
   <path d="M336 492c16 13 37 13 53 0" fill="none" stroke="#884c50" stroke-linecap="round" stroke-width="6"/>
@@ -30,4 +33,7 @@
   <circle cx="424" cy="654" r="13" fill="#7347a8"/>
   <path d="M346 817h28v83h-28z" fill="#e8def0"/>
   <path d="M355 832h10v34h-10z" fill="#7347a8" opacity=".72"/>
+  <path d="M281 397c41-11 83-39 111-82 13 40 37 67 68 81-9-113-38-169-91-169-55 0-82 58-88 170z" fill="#49384f"/>
+  <path d="M282 436c4 43 5 104-3 148" fill="none" stroke="#715a72" stroke-linecap="round" stroke-width="9" opacity=".7"/>
+  <path d="M454 436c-1 41-5 92-12 128" fill="none" stroke="#715a72" stroke-linecap="round" stroke-width="9" opacity=".7"/>
 </svg>
