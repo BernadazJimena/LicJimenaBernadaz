@@ -44,7 +44,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    flex-wrap: wrap;
+    gap: 0 5px;
     padding: 6px 16px;
     color: var(--white);
     background: var(--violet-dark);
@@ -597,8 +598,13 @@ h2 em {
         width: min(100% - 40px, 550px);
     }
 
+    .sample-notice {
+        min-height: 52px;
+    }
+
     .site-header {
         position: sticky;
+        top: 52px;
     }
 
     .nav-wrap {
